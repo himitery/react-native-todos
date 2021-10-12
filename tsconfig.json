@@ -1,0 +1,44 @@
+{
+  "extends": "expo/tsconfig.base",
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "react-native",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@constants/*": [
+        "src/constants/*"
+      ],
+      "@hocs/*": [
+        "src/hocs/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@navigations/*": [
+        "src/navigations/*"
+      ],
+      "@screens/*": [
+        "src/screens/*"
+      ],
+      "@stores/*": [
+        "src/stores/*"
+      ]
+    }
+  }
+}
